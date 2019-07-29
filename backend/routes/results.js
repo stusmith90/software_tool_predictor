@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let results = require('..//models/results.modal');
+let results = require('../models/results.modal');
 
 router.route('/').get((req, res) => {
     results.find()

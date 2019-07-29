@@ -1,0 +1,24 @@
+// import starting from the src/ folder
+@import "variables.scss";
+
+// can also be relative import
+// @import "./variables.scss";
+
+// we can use the $primaryColor variable now
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25% 100px auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.form{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
