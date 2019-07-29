@@ -6,19 +6,17 @@ import SoftwareForm from "./Components/SoftwareForm";
 
 class App extends Component {
   render() {
-    
     return (
       <div className="grid-container">
-        <div class="grid-item">Software Prediction Tool</div>
+        <div className="grid-item">Software Prediction Tool</div>
+        <div className="grid-router">
         <Router>
-      <div className="container">
-      <br/>
-      <Route path="/" exact component={SoftwareForm} />
-      </div>
-    </Router>
-            </div>
+          <Route path="/add" exact component={SoftwareForm} />
+          </Router>
+          </div>
+          </div>
             );
           }
         }
         
-        export default App;
+export default App;
